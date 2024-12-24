@@ -23,6 +23,9 @@ project "spdlog"
 		"SPDLOG_COMPILED_LIB"
 	}
 
+	filter "action:vs*"
+		buildoptions "/utf-8"
+
 	filter "system:windows"
 		systemversion "latest"
 		defines
